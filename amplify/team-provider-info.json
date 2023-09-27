@@ -1,4 +1,17 @@
 {
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cocoashieldapp-staging-110626-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317932801427:role/amplify-cocoashieldapp-staging-110626-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317932801427:role/amplify-cocoashieldapp-staging-110626-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cocoashieldapp-staging-110626-deployment",
+      "UnauthRoleName": "amplify-cocoashieldapp-staging-110626-unauthRole",
+      "StackName": "amplify-cocoashieldapp-staging-110626",
+      "StackId": "arn:aws:cloudformation:us-east-1:317932801427:stack/amplify-cocoashieldapp-staging-110626/e6da3fa0-5d25-11ee-94e3-0e8f13d66e19",
+      "AmplifyAppId": "d132dtdqb3lnx0"
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplifyreactapp-dev-185553-authRole",
