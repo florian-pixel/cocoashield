@@ -10,6 +10,11 @@
       "StackName": "amplify-cocoashieldapp-staging-110626",
       "StackId": "arn:aws:cloudformation:us-east-1:317932801427:stack/amplify-cocoashieldapp-staging-110626/e6da3fa0-5d25-11ee-94e3-0e8f13d66e19",
       "AmplifyAppId": "d132dtdqb3lnx0"
+    },
+    "categories": {
+      "auth": {
+        "cocoashieldapp95070e13": {}
+      }
     }
   },
   "dev": {
