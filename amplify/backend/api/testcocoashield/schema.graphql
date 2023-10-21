@@ -1,0 +1,17 @@
+type Plantation @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  lib: String
+  images: [Image] @hasMany(indexName: "byPlantation", fields: ["id"])
+}
+
+type Image @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nom: String
+  scannedAt: AWSDate
+  isScanned: Boolean
+  isSafe: Boolean
+  imagePath: String
+  createdAt: AWSDateTime
+  coordinates: String
+  plantationId: ID! @index(name: "byPlantation")
+} 

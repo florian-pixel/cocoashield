@@ -1,0 +1,157 @@
+{
+  "stackName": "amplify-cocoashieldapp-staging-110626",
+  "props": {
+    "templateFile": "root-stack-template.json",
+    "parameters": {
+      "AuthRoleName": "amplify-cocoashieldapp-staging-110626-authRole",
+      "UnauthRoleName": "amplify-cocoashieldapp-staging-110626-unauthRole",
+      "DeploymentBucketName": "amplify-cocoashieldapp-staging-110626-deployment"
+    },
+    "preserveLogicalIds": true,
+    "loadNestedStacks": {
+      "APIGatewayAuthStack": {
+        "templateFile": "auth/APIGatewayAuthStack.json",
+        "parameters": {
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
+      },
+      "apicocoashieldapp": {
+        "templateFile": "api/cocoashieldapp/cloudformation-template.json",
+        "parameters": {
+          "AppSyncApiName": "cocoashieldapp",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "S3DeploymentBucket": "amplify-cocoashieldapp-staging-110626-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/f55c135eab7d6dc841ab42a28648a97e3edce022",
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {
+          "ConnectionStack": {
+            "templateFile": "api/cocoashieldapp/amplify-appsync-files/stacks/ConnectionStack.json",
+            "preserveLogicalIds": true,
+            "loadNestedStacks": {}
+          },
+          "CustomResourcesjson": {
+            "templateFile": "api/cocoashieldapp/amplify-appsync-files/stacks/CustomResources.json",
+            "preserveLogicalIds": true,
+            "loadNestedStacks": {}
+          },
+          "Image": {
+            "templateFile": "api/cocoashieldapp/amplify-appsync-files/stacks/Image.json",
+            "preserveLogicalIds": true,
+            "loadNestedStacks": {}
+          },
+          "Plantation": {
+            "templateFile": "api/cocoashieldapp/amplify-appsync-files/stacks/Plantation.json",
+            "preserveLogicalIds": true,
+            "loadNestedStacks": {}
+          }
+        }
+      },
+      "apireactrestauthapicocoashield": {
+        "templateFile": "api/reactrestauthapicocoashield/reactrestauthapicocoashield-cloudformation-template.json",
+        "parameters": {
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
+      },
+      "authcocoashieldapp95070e13": {
+        "templateFile": "auth/cocoashieldapp95070e13/cocoashieldapp95070e13-cloudformation-template.json",
+        "parameters": {
+          "identityPoolName": "cocoashieldapp95070e13_identitypool_95070e13",
+          "allowUnauthenticatedIdentities": true,
+          "resourceNameTruncated": "cocoas95070e13",
+          "userPoolName": "cocoashieldapp95070e13_userpool_95070e13",
+          "autoVerifiedAttributes": [
+            "email"
+          ],
+          "mfaConfiguration": "OFF",
+          "mfaTypes": [
+            "SMS Text Message"
+          ],
+          "smsAuthenticationMessage": "Your authentication code is {####}",
+          "smsVerificationMessage": "Your verification code is {####}",
+          "emailVerificationSubject": "Your verification code",
+          "emailVerificationMessage": "Your verification code is {####}",
+          "defaultPasswordPolicy": false,
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [],
+          "requiredAttributes": [
+            "email"
+          ],
+          "aliasAttributes": [],
+          "userpoolClientGenerateSecret": false,
+          "userpoolClientRefreshTokenValidity": 30,
+          "userpoolClientWriteAttributes": [
+            "email"
+          ],
+          "userpoolClientReadAttributes": [
+            "email"
+          ],
+          "userpoolClientLambdaRole": "cocoas95070e13_userpoolclient_lambda_role",
+          "userpoolClientSetAttributes": false,
+          "sharedId": "95070e13",
+          "resourceName": "cocoashieldapp95070e13",
+          "authSelections": "identityPoolAndUserPool",
+          "useDefault": "default",
+          "usernameAttributes": [
+            "email"
+          ],
+          "userPoolGroupList": [],
+          "serviceName": "Cognito",
+          "usernameCaseSensitive": false,
+          "useEnabledMfas": true,
+          "breakCircularDependency": true,
+          "dependsOn": [],
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
+      },
+      "functioncocoashieldapp8e960f80": {
+        "templateFile": "function/cocoashieldapp8e960f80/cocoashieldapp8e960f80-cloudformation-template.json",
+        "parameters": {
+          "deploymentBucketName": "amplify-cocoashieldapp-staging-110626-deployment",
+          "s3Key": "amplify-builds/cocoashieldapp8e960f80-6462553139594235686a-build.zip",
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
+      },
+      "storages3cocoashieldappstoragee66e919e": {
+        "templateFile": "storage/s3cocoashieldappstoragee66e919e/cloudformation-template.json",
+        "parameters": {
+          "bucketName": "cocoashield-app-storage-e66e919e",
+          "selectedGuestPermissions": [],
+          "selectedAuthenticatedPermissions": [
+            "s3:PutObject",
+            "s3:GetObject",
+            "s3:ListBucket"
+          ],
+          "s3PrivatePolicy": "Private_policy_9b93dd5e",
+          "s3ProtectedPolicy": "Protected_policy_9b93dd5e",
+          "s3PublicPolicy": "Public_policy_9b93dd5e",
+          "s3ReadPolicy": "read_policy_9b93dd5e",
+          "s3UploadsPolicy": "Uploads_policy_9b93dd5e",
+          "authPolicyName": "s3_amplify_9b93dd5e",
+          "unauthPolicyName": "s3_amplify_9b93dd5e",
+          "AuthenticatedAllowList": "ALLOW",
+          "GuestAllowList": "DISALLOW",
+          "s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:GetObject",
+          "s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:GetObject",
+          "s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:GetObject",
+          "s3PermissionsAuthenticatedUploads": "s3:PutObject",
+          "s3PermissionsGuestPublic": "DISALLOW",
+          "s3PermissionsGuestUploads": "DISALLOW",
+          "env": "staging"
+        },
+        "preserveLogicalIds": true,
+        "loadNestedStacks": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,337 @@
+/***************************************************************************
+ * The contents of this file were generated with Amplify Studio.           *
+ * Please refrain from making any modifications to this file.              *
+ * Any changes to this file will be overwritten when running amplify pull. *
+ **************************************************************************/
+
+/* eslint-disable */
+import * as React from "react";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { Image, Text, View } from "@aws-amplify/ui-react";
+export default function Modal(props) {
+  const { overrides, ...rest } = props;
+  return (
+    <View
+      width="802px"
+      height="494px"
+      display="block"
+      gap="unset"
+      alignItems="unset"
+      justifyContent="unset"
+      position="relative"
+      padding="0px 0px 0px 0px"
+      {...getOverrideProps(overrides, "Modal")}
+      {...rest}
+    >
+      <View
+        width="401px"
+        height="494px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="0%"
+        bottom="0%"
+        left="50%"
+        right="0%"
+        border="1px SOLID rgba(0,0,0,1)"
+        borderRadius="0px 5px 5px 5px"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,1)"
+        opacity="0.699999988079071"
+        {...getOverrideProps(overrides, "Rectangle 3357")}
+      ></View>
+      <Image
+        width="50%"
+        height="100%"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="0%"
+        bottom="0%"
+        left="0%"
+        right="50%"
+        border="1px SOLID rgba(0,0,0,1)"
+        borderRadius="5px 0px 0px 5px"
+        padding="0px 0px 0px 0px"
+        opacity="0.699999988079071"
+        objectFit="cover"
+        {...getOverrideProps(overrides, "Rectangle 4")}
+      ></Image>
+      <View
+        width="342px"
+        height="211px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="43.93%"
+        bottom="13.36%"
+        left="53.74%"
+        right="3.62%"
+        border="1px SOLID rgba(0,0,0,1)"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,1)"
+        {...getOverrideProps(overrides, "Rectangle 5")}
+      ></View>
+      <View
+        width="109px"
+        height="37px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="90.28%"
+        bottom="2.23%"
+        left="82.79%"
+        right="3.62%"
+        borderRadius="5px"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(0,0,217,1)"
+        {...getOverrideProps(overrides, "Rectangle 6")}
+      ></View>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(255,255,255,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="91.5%"
+        bottom="3.64%"
+        left="84.29%"
+        right="5.11%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Enregistrer"
+        {...getOverrideProps(overrides, "Enregistrer462")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(255,255,255,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="91.5%"
+        bottom="3.64%"
+        left="84.29%"
+        right="5.11%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Enregistrer"
+        {...getOverrideProps(overrides, "Enregistrer62")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(0,0,0,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="39.07%"
+        bottom="56.07%"
+        left="53.74%"
+        right="33.42%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Commentaire"
+        {...getOverrideProps(overrides, "Commentaire")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="24px"
+        fontWeight="500"
+        color="rgba(0,0,0,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="247px"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="13.36%"
+        bottom="81.78%"
+        left="53.74%"
+        right="15.46%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="IMG1"
+        {...getOverrideProps(overrides, "IMG1")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(0,0,0,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="21.86%"
+        bottom="73.28%"
+        left="53.74%"
+        right="35.16%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Plantation 1"
+        {...getOverrideProps(overrides, "Plantation 1")}
+      ></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(0,0,0,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="21.86%"
+        bottom="73.28%"
+        left="78.18%"
+        right="3.62%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="14:00 - 01/12/2022"
+        {...getOverrideProps(overrides, "14:00 - 01/12/2022")}
+      ></Text>
+      <View
+        width="95px"
+        height="29px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="12.35%"
+        bottom="81.78%"
+        left="84.54%"
+        right="3.62%"
+        borderRadius="5px"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(0,217,0,1)"
+        {...getOverrideProps(overrides, "Rectangle 3467")}
+      ></View>
+      <Text
+        fontFamily="Inter"
+        fontSize="16px"
+        fontWeight="500"
+        color="rgba(255,255,255,1)"
+        lineHeight="24px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="12.75%"
+        bottom="82.39%"
+        left="88.4%"
+        right="7.48%"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Sain"
+        {...getOverrideProps(overrides, "Sain")}
+      ></Text>
+      <View
+        padding="0px 0px 0px 0px"
+        width="15.27px"
+        height="14.92px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="5.67%"
+        bottom="91.31%"
+        left="94.51%"
+        right="3.58%"
+        {...getOverrideProps(overrides, "Group 1")}
+      >
+        <View
+          width="4px"
+          height="17px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="19.46%"
+          bottom="-33.36%"
+          left="0%"
+          right="73.81%"
+          transformOrigin="top left"
+          transform="rotate(-45deg)"
+          padding="0px 0px 0px 0px"
+          backgroundColor="rgba(0,0,0,1)"
+          {...getOverrideProps(overrides, "Rectangle 7")}
+        ></View>
+        <View
+          width="4px"
+          height="17px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0%"
+          bottom="-13.91%"
+          left="81.48%"
+          right="-7.67%"
+          transformOrigin="top left"
+          transform="rotate(45deg)"
+          padding="0px 0px 0px 0px"
+          backgroundColor="rgba(0,0,0,1)"
+          {...getOverrideProps(overrides, "Rectangle 8")}
+        ></View>
+      </View>
+    </View>
+  );
+}

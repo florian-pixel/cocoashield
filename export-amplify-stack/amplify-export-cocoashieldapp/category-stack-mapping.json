@@ -1,0 +1,27 @@
+[
+  {
+    "category": "api",
+    "resourceName": "cocoashieldapp",
+    "service": "AppSync"
+  },
+  {
+    "category": "api",
+    "resourceName": "reactrestauthapicocoashield",
+    "service": "API Gateway"
+  },
+  {
+    "category": "auth",
+    "resourceName": "cocoashieldapp95070e13",
+    "service": "Cognito"
+  },
+  {
+    "category": "function",
+    "resourceName": "cocoashieldapp8e960f80",
+    "service": "Lambda"
+  },
+  {
+    "category": "storage",
+    "resourceName": "s3cocoashieldappstoragee66e919e",
+    "service": "S3"
+  }
+]

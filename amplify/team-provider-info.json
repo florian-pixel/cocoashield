@@ -1,47 +1,22 @@
 {
   "staging": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cocoashieldapp-staging-110626-authRole",
-      "UnauthRoleArn": "arn:aws:iam::317932801427:role/amplify-cocoashieldapp-staging-110626-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::317932801427:role/amplify-cocoashieldapp-staging-110626-authRole",
+      "AuthRoleName": "amplify-testcocoashield-staging-112745-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317932801427:role/amplify-testcocoashield-staging-112745-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317932801427:role/amplify-testcocoashield-staging-112745-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-cocoashieldapp-staging-110626-deployment",
-      "UnauthRoleName": "amplify-cocoashieldapp-staging-110626-unauthRole",
-      "StackName": "amplify-cocoashieldapp-staging-110626",
-      "StackId": "arn:aws:cloudformation:us-east-1:317932801427:stack/amplify-cocoashieldapp-staging-110626/e6da3fa0-5d25-11ee-94e3-0e8f13d66e19",
-      "AmplifyAppId": "d132dtdqb3lnx0",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cocoashieldapp-staging-110626-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "DeploymentBucketName": "amplify-testcocoashield-staging-112745-deployment",
+      "UnauthRoleName": "amplify-testcocoashield-staging-112745-unauthRole",
+      "StackName": "amplify-testcocoashield-staging-112745",
+      "StackId": "arn:aws:cloudformation:us-east-1:317932801427:stack/amplify-testcocoashield-staging-112745/b57e9290-6116-11ee-af1b-0e083bbbb2e7",
+      "AmplifyAppId": "dljp54ht2er8s"
     },
     "categories": {
       "auth": {
-        "cocoashieldapp95070e13": {}
-      },
-      "function": {
-        "cocoashieldapp8e960f80": {
-          "deploymentBucketName": "amplify-cocoashieldapp-staging-110626-deployment",
-          "s3Key": "amplify-builds/cocoashieldapp8e960f80-6462553139594235686a-build.zip"
-        }
+        "testcocoashieldded37598": {}
       },
       "api": {
-        "reactrestauthapicocoashield": {}
-      }
-    }
-  },
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyreactapp-dev-185553-authRole",
-      "UnauthRoleArn": "arn:aws:iam::317932801427:role/amplify-amplifyreactapp-dev-185553-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::317932801427:role/amplify-amplifyreactapp-dev-185553-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyreactapp-dev-185553-deployment",
-      "UnauthRoleName": "amplify-amplifyreactapp-dev-185553-unauthRole",
-      "StackName": "amplify-amplifyreactapp-dev-185553",
-      "StackId": "arn:aws:cloudformation:us-east-1:317932801427:stack/amplify-amplifyreactapp-dev-185553/56921460-57e7-11ee-8ae8-127de829f5a7",
-      "AmplifyAppId": "d27vh1vccnmj68"
-    },
-    "categories": {
-      "auth": {
-        "amplifyreactapp760e98d0": {}
+        "testcocoashield": {}
       }
     }
   }
